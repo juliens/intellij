@@ -9,8 +9,8 @@ ENV USER=intellij UID=1000 GID=1000
 
 RUN addgroup --gid ${GID} ${USER} \
 &&  adduser --home /home/${USER} --shell /bin/bash --uid ${UID} --gid ${GID} --disabled-password ${USER} \
-&&  echo "${USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER} \
-&&  chmod 0440 /etc/sudoers.d/${USER}
+#&&  echo "${USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER} \
+#&&  chmod 0440 /etc/sudoers.d/${USER}
 
 USER intellij
 
