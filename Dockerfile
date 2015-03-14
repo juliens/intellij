@@ -11,7 +11,7 @@ RUN addgroup --gid ${GID} ${USER} \
 USER intellij
 
 RUN  wget "http://download.jetbrains.com/idea/ideaIC-14.0.3.tar.gz" -O ~/idea.tgz \
-&&  cd ~ && tar -xzvf ~/idea.tgz
+&&  cd ~ && tar -xzvf ~/idea.tgz \
 && rm ~/idea.tgz
 
 
